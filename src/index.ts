@@ -1,1 +1,1 @@
-export * from './_carousel'
+export * from './react/_carousel'
