@@ -1,7 +1,7 @@
 import { useRef } from "react"
 
-export const useCarrousel = () => {
-  const containerRef = useRef()
+export const useCarousel = <T extends HTMLElement>() => {
+  const containerRef = useRef<T>(null)
 
   return [containerRef]
 }
