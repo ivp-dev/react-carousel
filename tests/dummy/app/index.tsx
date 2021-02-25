@@ -1,27 +1,19 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
-import { useCarousel } from '../../../src/index'
+import { Carousel } from '../../../src'
 
 import './index.scss'
 
-
-const Carousel = () => {
-  const [carouselRef] = useCarousel<HTMLDivElement>()
-
-  useEffect(() => {
-    if (carouselRef.current) {
-      carouselRef.current.addEventListener('click', () => {
-        console.log('test')
-      })
-    }
-  }, [carouselRef.current])
-
-  return <div ref={carouselRef} className="test">Test</div>
-}
-
 ReactDOM.render(
   <React.StrictMode>
-    <Carousel />
+    <Carousel>
+      <Carousel.Item>
+        <span>Test 1</span>
+      </Carousel.Item>
+      <Carousel.Item>
+        Test 2
+      </Carousel.Item>
+    </Carousel>
   </React.StrictMode>,
   document.getElementById('root')
 )

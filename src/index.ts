@@ -1,1 +1,1 @@
-export * from './react/_use-carousel'
+export { default as Carousel } from './_carousel'

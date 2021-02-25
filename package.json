@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "start": "webpack serve --config ./tests/dummy/webpack.config.js --progress --profile --content-base tests/dummy/"
+    "start": "webpack serve --config tests/dummy/webpack.config.js --progress --profile --content-base tests/dummy/"
   },
   "keywords": [
     "react",
